@@ -1,0 +1,27 @@
+[user]
+	name = Han Wei
+	email = laughinghan@gmail.com
+[diff]
+	REMOVE-ME-TO-ENABLE-external = /Users/Han/git-opendiff.sh
+	tool = Kaleidoscope
+[core]
+	editor = vim
+  excludesfile = ~/.gitignore
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+	br = branch -v
+[rerere]
+	enabled = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[push]
+  default = upstream
