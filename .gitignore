@@ -2,3 +2,4 @@
 .DS_Store
 # I <3 vim
 .*.sw[a-z]
+.sw[a-z]
