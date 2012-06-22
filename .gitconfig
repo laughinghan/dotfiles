@@ -17,6 +17,8 @@
 	st = status
 	co = checkout
 	br = branch -v
+	lg = log --decorate --graph --date=local
+	fancy = log --all --decorate --graph --date=local
 [rerere]
 	enabled = true
 [difftool "Kaleidoscope"]
