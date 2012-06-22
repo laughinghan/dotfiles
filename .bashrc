@@ -68,17 +68,10 @@ esac
 EXIT_CODE='$(if [[ $? = 0 ]]; then echo -ne ""; else echo -ne "\[\033[01;31m\]Exit Code $?\[\033[00m\]\n\r"; fi;)'
 PS1="$EXIT_CODE$PS1"
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
+# enable color support of ls and *grep
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # enable color support of ls and bash through environment variables
 export CLICOLOR=1
