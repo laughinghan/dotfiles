@@ -1,6 +1,8 @@
 [user]
 	name = Han Wei
 	email = laughinghan@gmail.com
+[merge]
+	conflictstyle = diff3
 [diff]
 	REMOVE-ME-TO-ENABLE-external = /Users/Han/git-opendiff.sh
 	tool = Kaleidoscope
