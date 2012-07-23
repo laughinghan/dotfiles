@@ -5,7 +5,6 @@
 	REMOVE-ME-TO-ENABLE-external = /Users/Han/git-opendiff.sh
 	tool = Kaleidoscope
 [core]
-	editor = vim
   excludesfile = ~/.gitignore
 [color]
 	branch = auto
