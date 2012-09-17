@@ -6,7 +6,7 @@ set showcmd
 syntax on
 colorscheme desert
 set expandtab autoindent shiftwidth=2 tabstop=2 softtabstop=2
-set ruler
+set laststatus=2
 set number
 set cursorline
 set list listchars=tab:»\ ,trail:·
