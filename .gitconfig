@@ -3,6 +3,7 @@
 	email = laughinghan@gmail.com
 [merge]
 	conflictstyle = diff3
+	ff = only
 [diff]
 	REMOVE-ME-TO-ENABLE-external = /Users/Han/git-opendiff.sh
 	tool = Kaleidoscope
@@ -17,6 +18,8 @@
 	ci = commit -v
 	st = status
 	co = checkout
+	mg = merge --no-ff
+	ff = merge
 	br = branch -v
 	lg = log --decorate --graph --date=local
 	fancy = log --all --decorate --graph --date=local
