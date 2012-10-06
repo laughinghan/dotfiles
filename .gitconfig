@@ -20,6 +20,7 @@
 	co = checkout
 	mg = merge --no-ff
 	ff = merge
+	purb = pull --rebase
 	br = branch -v
 	lg = log --decorate --graph --date=local
 	fancy = log --all --decorate --graph --date=local
