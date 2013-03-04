@@ -3,6 +3,7 @@
 	email = laughinghan@gmail.com
 [merge]
 	conflictstyle = diff3
+[pull]
 	ff = only
 [diff]
 	REMOVE-ME-TO-ENABLE-external = /Users/Han/git-opendiff.sh
