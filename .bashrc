@@ -65,7 +65,7 @@ xterm*|rxvt*)
     ;;
 esac
 
-EXIT_CODE='$(if [[ $? = 0 ]]; then echo -ne ""; else echo -ne "\[\033[01;31m\]Exit Code $?\[\033[00m\]\n\r"; fi;)'
+EXIT_CODE='$(PREV_EXIT_CODE=$?; if [[ $PREV_EXIT_CODE != 0 ]]; then echo "\033[01;31mExit Code $PREV_EXIT_CODE\033[00m" >&2; fi;)'
 PS1="$EXIT_CODE$PS1"
 
 # enable color support of ls and *grep
