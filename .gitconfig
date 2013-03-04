@@ -20,8 +20,8 @@
 	ff = merge
 	purb = pull --rebase
 	br = branch -v
-	lg = log --decorate --graph --date=local
-	fancy = log --all --decorate --graph --date=local
+	lg = log --decorate --graph --date=local --stat
+	fancy = log --all --decorate --graph --date=local --stat
 [rerere]
 	enabled = true
 [difftool "Kaleidoscope"]
