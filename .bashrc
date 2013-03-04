@@ -105,4 +105,6 @@ type rvm &>/dev/null && rvm 1.9.2
 export NODE_PATH=/usr/local/lib/node_modules
 export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin
 
+export PATH=~/prismatic/config/bin:$PATH
+
 export EDITOR=vim
