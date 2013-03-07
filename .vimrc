@@ -22,6 +22,9 @@ set synmaxcol=2048
 " remove any search highlighting
 nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
+" Enter is normally useless, and an "opposite" of J (join) is useful
+nnoremap <silent> <CR> i<CR><Esc>
+
 " make :vs path/to/file.ext and :sp path/to/file.ext do
 " the expected thing, i.e., open the file in the newly
 " split buffer rather than the original
