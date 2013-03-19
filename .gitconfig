@@ -15,6 +15,7 @@
 [alias]
 	ci = commit -v
 	st = status
+	dc = diff --cached
 	co = checkout
 	mg = merge --no-ff
 	ff = merge
@@ -22,6 +23,7 @@
 	br = branch -v
 	lg = log --decorate --graph --date=local --stat
 	fancy = log --all --decorate --graph --date=local --stat
+	rebasec = rebase --continue
 [rerere]
 	enabled = true
 [difftool "Kaleidoscope"]
