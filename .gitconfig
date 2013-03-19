@@ -22,7 +22,7 @@
 	purb = pull --rebase
 	br = branch -v
 	lg = log --decorate --graph --date=relative --stat
-	fancy = log --all --decorate --graph --date=local --stat
+	history = log --all --decorate --graph --date=local --stat
 	rebasec = rebase --continue
 [rerere]
 	enabled = true
