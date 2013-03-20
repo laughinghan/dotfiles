@@ -24,6 +24,7 @@
 	lg = log --decorate --graph --date=relative --stat
 	history = log --all --decorate --graph --date=local --stat
 	rebasec = rebase --continue
+	git = !git
 [rerere]
 	enabled = true
 [difftool "Kaleidoscope"]
