@@ -14,7 +14,7 @@
 	ui = auto
 [alias]
 	ci = commit -v
-	st = status
+	st = status -sb
 	dc = diff --cached
 	co = checkout
 	mg = merge --no-ff
