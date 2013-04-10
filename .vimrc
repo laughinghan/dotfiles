@@ -38,6 +38,8 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 " search
+set gdefault " default substitute all matches on each line, g flag toggles
+             " that off (to only substitute first mach on each line)
 set incsearch " search as you type
 set hlsearch " highlight all search results
 set ignorecase " combo with smartcase
