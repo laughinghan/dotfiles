@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = git://github.com/wincent/Command-T.git
+[submodule ".vim/bundle/Better-CSS-Syntax-for-Vim"]
+	path = .vim/bundle/Better-CSS-Syntax-for-Vim
+	url = git://github.com/ChrisYip/Better-CSS-Syntax-for-Vim.git

@@ -20,7 +20,7 @@
 	mg = merge --no-ff
 	ff = merge
 	purb = pull --rebase
-	br = branch -v
+	br = branch -vv
 	l = log --graph --pretty=format:'%C(red)%h%C(reset)%C(bold white)%d%C(reset) %s %C(cyan)<%aN>%C(reset) %C(yellow)%ar%C(reset) %C(green)(%cr)%C(reset)'
 	lg = log --decorate --graph --date=relative --stat
 	history = log --all --decorate --graph --date=local --stat
