@@ -3,8 +3,6 @@
 	email = laughinghan@gmail.com
 [merge]
 	conflictstyle = diff3
-[pull]
-	ff = only
 [diff]
 	REMOVE-ME-TO-ENABLE-external = /Users/Han/git-opendiff.sh
 	tool = Kaleidoscope
@@ -17,6 +15,7 @@
 	st = status -sb
 	dc = diff --cached
 	co = checkout
+	pl = pull --ff-only
 	mg = merge --no-ff
 	ff = merge
 	purb = pull --rebase
