@@ -53,9 +53,3 @@ set smartcase " case-insensitive iff entirely lowercase,
 
 " Use <Space> as <Leader> for Paredit
 let g:paredit_leader = '<Space>'
-
-" Causes the matches to be reversed so the best match is at the bottom and the
-" initially selected match is the bottom most. This may be preferable if
-" you want the best match to appear in a fixed location on the screen
-" but still be near the prompt at the bottom.
-let g:CommandTMatchWindowReverse=1
