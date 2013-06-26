@@ -27,7 +27,7 @@ nnoremap <silent> <CR> i<CR><Esc>
 
 " I use <C-i> way less often than I switch windows
 nnoremap <Tab> <C-w>
-nnoremap <C-p> <C-i>
+nnoremap <C-w> <C-i>
 
 " make :vs path/to/file.ext and :sp path/to/file.ext do
 " the expected thing, i.e., open the file in the newly
