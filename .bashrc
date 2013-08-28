@@ -72,11 +72,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-rvm_path="$HOME"/.rvm/scripts/rvm
-[[ -s "$rvm_path" ]] && . "$rvm_path"
-type rvm &>/dev/null && rvm 1.9.2
-
 export NODE_PATH=/usr/local/lib/node_modules
 export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin
 
 export EDITOR=vim
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

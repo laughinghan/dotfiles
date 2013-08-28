@@ -1,7 +1,3 @@
-if [ -f ~/.bashrc ]; then
-  . ~/.bashrc
-fi
-
 ##
 # Your previous /Users/Han/.bash_profile file was backed up as /Users/Han/.bash_profile.macports-saved_2011-05-25_at_10:38:30
 ##
@@ -13,3 +9,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 # Setting PATH for ActivePython 2.6
 export PATH=/usr/local/bin:$PATH
+
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
