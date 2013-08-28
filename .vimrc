@@ -51,8 +51,6 @@ set smartcase " case-insensitive iff entirely lowercase,
               " but if you type something camelCased,
               " will be case-sensitive
 
-" Use <Space> as <Leader> for Paredit
-let g:paredit_leader = '<Space>'
 
 " When opening a file, if it's already open in a window somewhere, tell CtrlP
 " to open a new instance instead of jumping to it.
