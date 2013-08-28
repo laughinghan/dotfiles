@@ -51,6 +51,8 @@ set smartcase " case-insensitive iff entirely lowercase,
               " but if you type something camelCased,
               " will be case-sensitive
 
+" after doing #, want n to go forwards not backwards
+nnoremap # *NN
 
 " When opening a file, if it's already open in a window somewhere, tell CtrlP
 " to open a new instance instead of jumping to it.
