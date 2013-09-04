@@ -7,6 +7,7 @@ syntax on
 colorscheme desert
 set expandtab autoindent shiftwidth=2 tabstop=2 softtabstop=2
 set laststatus=2
+set number
 set relativenumber
 set cursorline
 set list listchars=tab:»\ ,trail:·
