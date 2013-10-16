@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/underscore-templates.vim"]
 	path = .vim/bundle/underscore-templates.vim
 	url = git@github.com:laughinghan/underscore-templates.vim.git
+[submodule ".vim/bundle/vim-coffee-script"]
+	path = .vim/bundle/vim-coffee-script
+	url = git@github.com:kchmck/vim-coffee-script.git
