@@ -16,8 +16,8 @@
 	dc = diff --cached
 	co = checkout
 	pl = pull --ff-only
+	ff = merge --ff-only
 	mg = merge --no-ff
-	ff = merge
 	purb = pull --rebase
 	br = branch -vv
 	l = log --graph --pretty=tformat:'%C(red)%h%C(reset)%C(bold white)%d%C(reset) %s %C(cyan)<%aN>%C(reset) %C(yellow)%ar%C(reset) %C(green)(%cr)%C(reset)'
