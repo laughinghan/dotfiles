@@ -19,10 +19,6 @@ set scrolloff=1
 " Don't.
 set synmaxcol=2048
 
-" <Ctrl-l> normally redraws the screen; this makes it also
-" remove any search highlighting
-nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
-
 " Enter is normally useless, and an "opposite" of J (join) is useful
 nnoremap <silent> <CR> i<CR><Esc>
 
@@ -51,6 +47,10 @@ set ignorecase " combo with smartcase
 set smartcase " case-insensitive iff entirely lowercase,
               " but if you type something camelCased,
               " will be case-sensitive
+
+" <Ctrl-l> normally redraws the screen; this makes it also
+" remove any search highlighting
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
 " after doing #, want n to go forwards not backwards
 nnoremap # *NN
