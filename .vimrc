@@ -1,16 +1,26 @@
 call pathogen#infect()
+
+" Vi-mode sucks
 set nocompatible
 set backspace=indent,eol,start
+
+" auto-syntax highlight
 filetype plugin indent on
-set showcmd
 syntax on
 colorscheme desert
-set expandtab autoindent shiftwidth=2 tabstop=2 softtabstop=2
-set laststatus=2
+
+set showcmd " show multi-char commands as you type
+set expandtab autoindent shiftwidth=2 tabstop=2 softtabstop=2 " indent settings
+set laststatus=2 " for Powerline
+set cursorline " makes the cursor easier to find
+set list listchars=tab:»\ ,trail:· " show tabs and trailing spaces but not normal spaces
+
+" relativenumber makes most numbers in the gutter relative; number then
+" makes the current cursor line, rather than always 0 (which is
+" uninformative), the line number.
+" https://groups.google.com/d/msg/vim_dev/VBKxaoILi0s/l9o-OHv3vtkJ
 set number
 set relativenumber
-set cursorline
-set list listchars=tab:»\ ,trail:·
 
 " Always show at least one line above/below the cursor.
 set scrolloff=1
