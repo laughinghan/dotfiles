@@ -15,7 +15,7 @@
 	st = status -sb
 	dc = diff --cached
 	co = checkout
-	pl = pull --ff-only
+	pl = pull --ff-only --prune
 	ff = merge --ff-only
 	mg = merge --no-ff
 	purb = pull --rebase
