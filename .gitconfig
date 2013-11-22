@@ -21,6 +21,7 @@
 	purb = pull --rebase
 	br = branch -vv
 	l = log --graph --pretty=tformat:'%C(red)%h%C(reset)%C(bold white)%d%C(reset) %s %C(cyan)<%aN>%C(reset) %C(yellow)%ad%C(reset) %C(green)(%cd)%C(reset)' --date=relative
+	lt = log --graph --pretty=tformat:'%C(red)%h%C(reset)%C(bold white)%d%C(reset) %s %C(cyan)<%aN>%C(reset) %C(yellow)%ar%C(reset) on %C(yellow)%ad%C(reset) %C(green)(%cr%C(reset) on %C(green)%cd)%C(reset)' --date=rfc
 	lg = log --decorate --graph --date=relative --stat
 	lu = !"cd \"$GIT_PREFIX\" && git l @{u}^! HEAD"
 	rootgrep = !git grep ; since "shell commands will be executed from the top-level directory of a repository" - git help config
