@@ -12,6 +12,7 @@
 	ui = auto
 [alias]
 	ci = commit -v
+	car = commit -v --amend --reset-author
 	st = status -sb
 	dc = diff --cached
 	co = checkout
