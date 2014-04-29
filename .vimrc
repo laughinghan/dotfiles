@@ -68,3 +68,6 @@ nnoremap # *NN
 " When opening a file, if it's already open in a window somewhere, tell CtrlP
 " to open a new instance instead of jumping to it.
 let g:ctrlp_switch_buffer = 0
+
+" Disable auto-folding of Markdown: https://github.com/plasticboy/vim-markdown#options
+let g:vim_markdown_folding_disabled=1
