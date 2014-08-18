@@ -78,3 +78,9 @@ export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin
 export EDITOR=vim
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# jneen/ry: The simplest ruby version manager
+eval "$(ry setup)"
