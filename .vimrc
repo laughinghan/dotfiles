@@ -62,8 +62,11 @@ set smartcase " case-insensitive iff entirely lowercase,
 " remove any search highlighting
 nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
-" after doing #, want n to go forwards not backwards
-nnoremap # *NN
+" n always searches forwards in the file and N always searches backwards,
+" regardless of whether the last search command was /, ?, *, or #
+" http://stackoverflow.com/a/25740547/362030
+noremap <expr> n 'Nn'[v:searchforward]
+noremap <expr> N 'nN'[v:searchforward]
 
 " When opening a file, if it's already open in a window somewhere, tell CtrlP
 " to open a new instance instead of jumping to it.
