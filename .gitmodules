@@ -6,7 +6,7 @@
 	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule ".vim/bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
-	url = git@github.com:laughinghan/vim-easymotion.git
+	url = git@github.com:Lokaltog/vim-easymotion.git
 [submodule ".vim/bundle/vim-seek"]
 	path = .vim/bundle/vim-seek
 	url = git@github.com:laughinghan/vim-seek.git

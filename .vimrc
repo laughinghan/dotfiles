@@ -68,6 +68,16 @@ nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 noremap <expr> n 'Nn'[v:searchforward]
 noremap <expr> N 'nN'[v:searchforward]
 
+" Configure vim-easymotion 2.0: https://github.com/Lokaltog/vim-easymotion#default-bindings
+" Use Spacebar as EasyMotion hotkey:
+map <Space> <Plug>(easymotion-prefix)
+" Jump to anywhere! But most importantly, after _'s:
+map <Space>a <Plug>(easymotion-jumptoanywhere)
+" On <Space>j or <Space>k, stay in the same column, instead of start of line:
+let g:EasyMotion_startofline = 0
+" Use only homerow keys rather than all letters as motion targets:
+let g:EasyMotion_keys = 'asdfgASDFGHJKL:hjkl;'
+
 " When opening a file, if it's already open in a window somewhere, tell CtrlP
 " to open a new instance instead of jumping to it.
 let g:ctrlp_switch_buffer = 0
