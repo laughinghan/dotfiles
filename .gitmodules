@@ -7,9 +7,6 @@
 [submodule ".vim/bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
 	url = git@github.com:Lokaltog/vim-easymotion.git
-[submodule ".vim/bundle/vim-seek"]
-	path = .vim/bundle/vim-seek
-	url = git@github.com:laughinghan/vim-seek.git
 [submodule ".vim/bundle/vim-stylus"]
 	path = .vim/bundle/vim-stylus
 	url = git://github.com/wavded/vim-stylus.git
@@ -46,3 +43,6 @@
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = git@github.com:plasticboy/vim-markdown.git
+[submodule ".vim/bundle/vim-sneak"]
+	path = .vim/bundle/vim-sneak
+	url = git@github.com:justinmk/vim-sneak.git
