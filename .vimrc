@@ -15,6 +15,11 @@ set laststatus=2 " for Powerline
 set cursorline " makes the cursor easier to find
 set list listchars=tab:»\ ,trail:· " show tabs and trailing spaces but not normal spaces
 
+" Use "emacs-style" readline keybindings in command mode, see :help tcsh-style
+cnoremap <C-A> <Home>
+cnoremap <C-F> <Right>
+cnoremap <C-B> <Left>
+
 " relativenumber makes most numbers in the gutter relative; number then
 " makes the current cursor line, rather than always 0 (which is
 " uninformative), the line number.
