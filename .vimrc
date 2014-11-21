@@ -19,6 +19,7 @@ set list listchars=tab:»\ ,trail:· " show tabs and trailing spaces but not nor
 cnoremap <C-A> <Home>
 cnoremap <C-F> <Right>
 cnoremap <C-B> <Left>
+cnoremap <C-D> <Del>
 
 " relativenumber makes most numbers in the gutter relative; number then
 " makes the current cursor line, rather than always 0 (which is
