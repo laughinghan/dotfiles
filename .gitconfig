@@ -26,6 +26,17 @@
 	lg = log --decorate --graph --date=relative --stat
 	lu = !cd \"$GIT_PREFIX\" && git l @{u}^! HEAD
 	rootgrep = !git grep ; since "shell commands will be executed from the top-level directory of a repository" - git help config
+	rootsgrep = !git sgrep
+	sgrep = !cd \"$GIT_PREFIX\" && { \n \
+		git --no-pager grep --color \"$@\" "# First, git-grep in current repo, without pager so all output can be concatenated before being paged.\n" \
+		git submodule foreach -q ' "# Then, recurse into submodules,\n" \
+			case \"$path\" in ../*) exit \n esac "# skipping those not in the current directory, and\n" \
+			git sgrep '\"$(printf '%q ' \"$@\")\"' | { "# (printf %q is a bash-ism, but necessary lest `git rootsgrep \"'test'\"` be equivalent to `git rootsgrep test`)\n" \
+				"# prefixing every line of grep output with the submodule path (http://unix.stackexchange.com/a/94166).\n" \
+				while IFS= read -r line \n do printf \"%s/%s\\n\" \"$path\" \"$line\" \n done \n \
+			} \n \
+		' \n \
+	} | less -FRSX "# Finally, page with git's default pager. Also, comment out arguments that are appended after this"
 	rebasec = rebase --continue
 	git = !cd \"$GIT_PREFIX\" && git
 [rerere]
