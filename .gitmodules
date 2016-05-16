@@ -15,7 +15,7 @@
 	url = git://github.com/vim-scripts/paredit.vim
 [submodule ".vim/bundle/rainbow_parentheses.vim"]
 	path = .vim/bundle/rainbow_parentheses.vim
-	url = git@github.com:laughinghan/rainbow_parentheses.vim.git
+	url = git@github.com:eapache/rainbow_parentheses.vim.git
 [submodule ".vim/bundle/vim-git"]
 	path = .vim/bundle/vim-git
 	url = git://github.com/tpope/vim-git.git
