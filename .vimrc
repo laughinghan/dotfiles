@@ -53,7 +53,7 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-" workaround for vim-javascript to play nice with Rainbow Parentheses
+" workaround for vim-javascript to play nice with Rainbow Parentheses and semantic-highlight.vim
 " https://github.com/pangloss/vim-javascript/issues/184#issuecomment-229473807
 autocmd FileType javascript syntax clear jsFuncBlock jsFuncArgs
 
@@ -83,3 +83,7 @@ let g:ctrlp_switch_buffer = 0
 
 " Disable auto-folding of Markdown: https://github.com/plasticboy/vim-markdown#options
 let g:vim_markdown_folding_disabled=1
+
+" semantic-highlight.vim, with hand-tuned colors for my terminal
+let g:semanticTermColors = [3,124,30,32,33,64,66,67,69,99,101,102,103,104,132,133,135,136,137,164,165,166,167,168,169,170,198,200]
+au VimEnter * SemanticHighlight
