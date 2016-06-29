@@ -53,6 +53,9 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+" workaround for vim-javascript to play nice with Rainbow Parentheses
+" https://github.com/pangloss/vim-javascript/issues/184#issuecomment-229473807
+autocmd FileType javascript syntax clear jsFuncBlock jsFuncArgs
 
 " search
 set gdefault " default substitute all matches on each line, g flag toggles
