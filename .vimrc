@@ -86,4 +86,4 @@ let g:vim_markdown_folding_disabled=1
 
 " semantic-highlight.vim, with hand-tuned colors for my terminal
 let g:semanticTermColors = [3,124,30,32,33,64,66,67,69,99,101,102,103,104,132,133,135,136,137,164,165,166,167,168,169,170,198,200]
-au VimEnter * SemanticHighlight
+au FileType javascript SemanticHighlight
