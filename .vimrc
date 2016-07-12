@@ -55,7 +55,7 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 " workaround for vim-javascript to play nice with Rainbow Parentheses and semantic-highlight.vim
 " https://github.com/pangloss/vim-javascript/issues/184#issuecomment-229473807
-autocmd FileType javascript syntax clear jsFuncBlock jsFuncArgs
+autocmd FileType javascript syntax clear jsFuncBlock jsFuncArgs jsTernaryIf
 
 " search
 set gdefault " default substitute all matches on each line, g flag toggles
