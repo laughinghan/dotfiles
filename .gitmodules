@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/semantic-highlight.vim"]
 	path = .vim/bundle/semantic-highlight.vim
 	url = git@github.com:jaxbot/semantic-highlight.vim.git
+[submodule ".vim/bundle/vim-yaml"]
+	path = .vim/bundle/vim-yaml
+	url = git@github.com:stephpy/vim-yaml.git
