@@ -55,3 +55,6 @@
 [submodule ".vim/bundle/vim-yaml"]
 	path = .vim/bundle/vim-yaml
 	url = git@github.com:stephpy/vim-yaml.git
+[submodule ".vim/bundle/vim-es6"]
+	path = .vim/bundle/vim-es6
+	url = git@github.com:isRuslan/vim-es6.git
