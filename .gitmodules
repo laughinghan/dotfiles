@@ -22,9 +22,6 @@
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule ".vim/bundle/vim-javascript"]
-	path = .vim/bundle/vim-javascript
-	url = git@github.com:pangloss/vim-javascript.git
 [submodule ".vim/bundle/underscore-templates.vim"]
 	path = .vim/bundle/underscore-templates.vim
 	url = git@github.com:laughinghan/underscore-templates.vim.git
