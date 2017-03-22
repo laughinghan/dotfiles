@@ -83,4 +83,4 @@ export EDITOR=vim
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # jneen/ry: The simplest ruby version manager
-eval "$(ry setup)"
+command -v ry && eval "$(ry setup)"
