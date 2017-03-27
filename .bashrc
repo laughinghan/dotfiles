@@ -84,3 +84,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # jneen/ry: The simplest ruby version manager
 command -v ry && eval "$(ry setup)"
+
+# or rbenv, the popular one. The Regina George of ruby version managers, if you will
+command -v rbenv && eval "$(rbenv init -)"
