@@ -11,9 +11,12 @@ colorscheme desert
 
 set showcmd " show multi-char commands as you type
 set expandtab autoindent shiftwidth=2 tabstop=2 softtabstop=2 " indent settings
-set laststatus=2 " for Powerline
 set cursorline " makes the cursor easier to find
 set list listchars=tab:»\ ,trail:· " show tabs and trailing spaces but not normal spaces
+
+" for Airline
+set laststatus=2
+let g:airline_theme='powerlineish'
 
 " Use "emacs-style" readline keybindings in command mode, see :help tcsh-style
 cnoremap <C-A> <Home>
