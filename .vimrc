@@ -13,6 +13,7 @@ set showcmd " show multi-char commands as you type
 set expandtab autoindent shiftwidth=2 tabstop=2 softtabstop=2 " indent settings
 set cursorline " makes the cursor easier to find
 set list listchars=tab:»\ ,trail:· " show tabs and trailing spaces but not normal spaces
+set autoread " auto-reload unmodified buffers after git checkout
 
 " for Airline
 set laststatus=2
