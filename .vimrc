@@ -78,6 +78,15 @@ nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 noremap <expr> n 'Nn'[v:searchforward]
 noremap <expr> N 'nN'[v:searchforward]
 
+" in visual mode, p pastes over current selection. Since that overwrites the
+" current selection, the current selection is moved into the unnamed register.
+" This is annoying because often I want to paste the same thing multiple
+" times, but after the first paste, the thing I pasted over is what's pasted
+" on the second paste. The following first deletes the current selection
+" without moving it into any register, so that paste multiple times will work:
+xnoremap <silent> p p:let @"=@0<CR>
+" http://vim.wikia.com/wiki/Replace_a_word_with_yanked_text#Alternative_mapping_for_paste
+
 " When opening a file, if it's already open in a window somewhere, tell CtrlP
 " to open a new instance instead of jumping to it.
 let g:ctrlp_switch_buffer = 0
