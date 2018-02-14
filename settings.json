@@ -1,0 +1,45 @@
+{
+    "window.zoomLevel": -1,
+    "editor.minimap.showSlider": "always",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.hlsearch": true,
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors" : {
+        "normal": "#005f5f",
+        "insert": "#5f0000",
+        "visual": "#5f00af",
+        "visualline": "#005f87",
+        "visualblock": "#86592d",
+        "replace": "#000000"
+    },
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["Tab"],
+            "after": ["<C-w>"]
+        },
+        {
+            "before": ["<C-w>"],
+            "after": ["<C-i>"]
+        },
+        {
+            "before": ["<C-n>"],
+            "after": [],
+            "commands": [
+                {
+                    "command": ":nohlsearch",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "editor.lineNumbers": "relative",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "files.associations": {
+        "*.js.erb": "javascript"
+    }
+}
