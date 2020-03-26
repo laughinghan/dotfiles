@@ -2,7 +2,6 @@
     "window.zoomLevel": -1,
     "editor.minimap.showSlider": "always",
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "vim.disableAnnoyingNeovimMessage": true,
     "vim.hlsearch": true,
     "vim.statusBarColorControl": true,
     "vim.statusBarColors" : {
@@ -13,7 +12,7 @@
         "visualblock": "#86592d",
         "replace": "#000000"
     },
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["Tab"],
             "after": ["<C-w>"]
@@ -23,7 +22,7 @@
             "after": ["<C-i>"]
         },
         {
-            "before": ["<C-n>"],
+            "before": ["<C-l>"],
             "after": [],
             "commands": [
                 {
