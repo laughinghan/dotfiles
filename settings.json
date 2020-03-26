@@ -35,11 +35,14 @@
     ],
     "editor.lineNumbers": "relative",
     "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#555",
         "statusBar.background": "#005f5f",
         "statusBar.noFolderBackground": "#005f5f",
         "statusBar.debuggingBackground": "#005f5f"
     },
     "files.associations": {
         "*.js.erb": "javascript"
-    }
+    },
+    "vim.sneak": true,
+    "vim.sneakReplacesF": true
 }

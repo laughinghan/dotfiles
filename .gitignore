@@ -3,3 +3,7 @@
 # I <3 vim
 .*.sw[a-z]
 .sw[a-z]
+# VS Code pollution
+.vscode/
+# tbh I don't know what this is, even after reading https://stackoverflow.com/q/9850360
+.vim/.netrwhist
