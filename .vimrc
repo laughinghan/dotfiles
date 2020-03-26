@@ -4,6 +4,9 @@ execute pathogen#infect()
 set nocompatible
 set backspace=indent,eol,start
 
+" Mitigate security vulnerability: https://github.com/numirias/security/blob/master/doc/2019-06-04_ace-vim-neovim.md
+set nomodeline
+
 " auto-syntax highlight
 filetype plugin indent on
 syntax on
