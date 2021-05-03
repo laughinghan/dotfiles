@@ -1,47 +1,51 @@
 {
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "editor.minimap.showSlider": "always",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "vim.hlsearch": true,
     "vim.statusBarColorControl": true,
-    "vim.statusBarColors" : {
-        "normal": "#005f5f",
-        "insert": "#5f0000",
-        "visual": "#5f00af",
-        "visualline": "#005f87",
-        "visualblock": "#86592d",
-        "replace": "#000000"
-    },
+    "vim.statusBarColors.normal": "#000000",
+    "vim.statusBarColors.insert": "#007acc",
+    "vim.statusBarColors.visual": "#5f00af",
+    "vim.statusBarColors.visualline": "#005f87",
+    "vim.statusBarColors.replace": "#d08770",
+    "vim.statusBarColors.commandlineinprogress": "#005f5f",
+    "vim.statusBarColors.searchinprogressmode": "#005f5f",
+    "vim.statusBarColors.easymotionmode": "#005f5f",
+    "vim.statusBarColors.easymotioninputmode": "#005f5f",
+    "vim.statusBarColors.surroundinputmode": "#005f5f",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["Tab"],
-            "after": ["<C-w>"]
+            "after": ["<C-w>"],
         },
         {
             "before": ["<C-w>"],
-            "after": ["<C-i>"]
+            "after": ["<C-i>"],
+        },
+        {
+            "before": ["#"],
+            "after": ["*", "N", "N"],
         },
         {
             "before": ["<C-l>"],
-            "after": [],
-            "commands": [
-                {
-                    "command": ":nohlsearch",
-                    "args": []
-                }
-            ]
-        }
+            "commands": [":nohlsearch"],
+        },
     ],
+    "vim.handleKeys": {
+        "<C-n>": false,
+    },
     "editor.lineNumbers": "relative",
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#555",
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+        "statusBar.background": "#000000",
+        "statusBar.noFolderBackground": "#000000",
+        "statusBar.debuggingBackground": "#000000"
     },
     "files.associations": {
-        "*.js.erb": "javascript"
+        "*.js.erb": "javascript",
     },
+    "vim.gdefault": true,
     "vim.sneak": true,
-    "vim.sneakReplacesF": true
+    "vim.sneakReplacesF": true,
 }
