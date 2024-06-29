@@ -1,5 +1,5 @@
 # whitelist not blacklist because temporary dotfiles get created by e.g. vim
-FILES_TO_LINK='.bash_profile .bashrc .gitconfig .gitignore .vim .vimrc'
+FILES_TO_LINK='.bash_profile .bashrc .gitconfig .gitignore .vim .vimrc .ideavimrc'
 cd
 FILES_ALREADY_IN_HOMEDIR="$(ls $FILES_TO_LINK 2>/dev/null)"
 if test -n "$FILES_ALREADY_IN_HOMEDIR" 

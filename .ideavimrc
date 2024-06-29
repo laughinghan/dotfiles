@@ -1,0 +1,47 @@
+set cursorline " makes the cursor easier to find
+set list listchars=tab:»\ ,trail:· " show tabs and trailing spaces but not normal spaces
+
+" Use "emacs-style" readline keybindings in command mode, see :help tcsh-style
+cnoremap <C-A> <Home>
+cnoremap <C-F> <Right>
+cnoremap <C-B> <Left>
+cnoremap <C-D> <Del>
+
+" relativenumber makes most numbers in the gutter relative; number then
+" makes the current cursor line, rather than always 0 (which is
+" uninformative), the line number.
+" https://groups.google.com/d/msg/vim_dev/VBKxaoILi0s/l9o-OHv3vtkJ
+set number
+set relativenumber
+
+" Always show at least one line above/below the cursor.
+set scrolloff=1
+
+" Enter is normally useless, and an "opposite" of J (join) is useful
+nnoremap <silent> <CR> i<CR><Esc>
+
+" Unlike Terminal Vim, <Tab> can be remapped separately from <C-i>, which
+" would be nice because <C-i> as the opposite of <C-o> would be useful,
+" except <C-o> in IdeaVim is almost useless, it seems to be unaware of many
+" of the things that move or teleport the cursor
+nnoremap <Tab> <C-w>
+
+" search
+set gdefault " default substitute all matches on each line, g flag toggles
+             " that off (to only substitute first mach on each line)
+set incsearch " search as you type
+set hlsearch " highlight all search results
+set ignorecase " combo with smartcase
+set smartcase " case-insensitive iff entirely lowercase,
+              " but if you type something camelCased,
+              " will be case-sensitive
+
+" <Ctrl-l> normally redraws the screen; this makes it also
+" remove any search highlighting
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
+
+" n always searches forwards in the file and N always searches backwards,
+" regardless of whether the last search command was /, ?, *, or #
+" http://stackoverflow.com/a/25740547/362030
+noremap <expr> n 'Nn'[v:searchforward]
+noremap <expr> N 'nN'[v:searchforward]
